@@ -1,0 +1,154 @@
+
+
+
+
+
+.img1 {
+  margin-top: 5px;
+    transition: all 0.4s ease; 
+}
+ .img1:hover {
+    transform: scale(1.30); 
+    filter: brightness(1.1); 
+     cursor: pointer;
+} 
+
+.sp {
+  transition: 0.3;
+}
+
+.sp:hover {
+  transform: scale(1.10);
+}
+
+.pink-title {
+  color: rgb(247, 172, 217);
+  font-weight: bold;
+}
+
+.product-card {
+  border: none;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+height: 420px;
+ }
+
+.product-card:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 20px rgba(236, 14, 147, 0.2);
+}
+
+.btn-pink-order {
+  background-color: rgb(250, 164, 216);
+  color: white;
+  border-radius: 15px;
+  border: none;
+  width: 80px;
+  transition: 0.3s;
+}
+
+.btn-pink-order:hover {
+  background-color: #b00b6d;
+  color: white;
+  transform: scale(1.05);
+}
+
+.price-text {
+  color: #d81b60;
+  font-size: 1.1rem;
+}
+
+.card-body {
+    position: relative;
+    bottom: 22px;
+}
+
+.card-text {
+    font-size: large;
+}
+
+.w-100  {
+  transition: 0.3;
+}
+
+.w-100 :hover {
+  transform: scale(1.1);
+}
+
+.px-4  {
+  transition: 0.1;
+  position: relative;
+  bottom: 30px;
+}
+
+.px-4:hover  {
+  transform: scale(0.9);
+}
+
+.text-muted {
+    transition: 0.3;
+margin-top: 20px;
+}
+
+.text-muted:hover {
+  
+    transform: scale(1.09);
+}
+
+.fw-bold {
+  transition: 0.3;
+}
+
+.fw-bold:hover {
+  transform: scale(1.08);
+  color: #f589ca;
+}
+
+  .img-fluid {
+    transition: 0.3s;
+  }
+
+  .img-fluid:hover {
+    transform: scale(1.20);
+  }
+
+.nav-link {
+    transition: all 0.3s ease; 
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: rgb(236, 14, 147) !important; 
+    transform: translateY(-2px); 
+}
+
+.dropdown-item:hover {
+    background-color: rgb(236, 14, 147) !important;
+    color: white !important;
+}
+
+.text-white {
+  transition: 0.3;
+}
+
+.text-white:hover {
+  transform: scale(1.20);
+}
+
+.pinki-logo {
+background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../public/image_2338102702.png');
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .pinki-logo:hover {
+  transform: scale(1.09);
+} */
