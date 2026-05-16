@@ -6,18 +6,12 @@ import { useCart } from "../CartContext";
 function Navbar () {
 
   const [searchterm, setsearchterm] = useState ("");
-
-
-
-
   const navigate = useNavigate ();
   const {cartItems} = useCart ();
 
   const totalItems = cartItems.reduce((acc, item) => acc + item.quantity, 0);
 
   const handelsearch = (e) => {
-
-    
     const value = e.target.value;
     setsearchterm (value);
 
