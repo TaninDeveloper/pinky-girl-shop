@@ -9,7 +9,7 @@ function Navbar () {
   const navigate = useNavigate ();
   const {cartItems} = useCart ();
 
-  // const totalItems = cartItems.reduce((acc, item) => acc + item.quantity, 0);
+  const totalItems = cartItems.reduce((acc, item) => acc + item.quantity, 0);
 
   const handelsearch = (e) => {
     const value = e.target.value;
