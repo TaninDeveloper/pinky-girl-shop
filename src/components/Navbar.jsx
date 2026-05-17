@@ -6,6 +6,8 @@ import { useCart } from "../CartContext";
 function Navbar () {
 
   const [searchterm, setsearchterm] = useState ("");
+
+  
   const navigate = useNavigate ();
   const {cartItems} = useCart ();
 
