@@ -1,20 +1,15 @@
 
 import React, {useState} from "react";
 import { Link, useNavigate } from "react-router-dom";
-
-
-
 import { useCart } from "../CartContext";
 
 function Navbar () {
 
   const [searchterm, setsearchterm] = useState ("");
-
-  
   const navigate = useNavigate ();
   const {cartItems} = useCart ();
 
-  const totalItems = cartItems.reduce((acc, item) => acc + item.quantity, 0);
+  // const totalItems = cartItems.reduce((acc, item) => acc + item.quantity, 0);
 
   const handelsearch = (e) => {
     const value = e.target.value;
