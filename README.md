@@ -1,16 +1,40 @@
-# React + Vite
+🎀 Pinky Girl Cosmetics Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-end, aesthetically designed e-commerce platform specializing in beauty and cosmetics. This project focuses on providing a seamless shopping experience with a sophisticated feminine visual identity and robust state management.
 
-Currently, two official plugins are available:
+✨ Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🛍️ Advanced Shopping Experience
+- Smart Shopping Cart: A fully functional cart system with real-time total price calculation and dynamic item management (add, increase, decrease, and remove).
+- Inventory Validation: Intelligent stock tracking that prevents users from adding more items to the cart than the available stock.
+- Real-time Quantity Control: Ability to manage product quantities directly from the individual product pages.
+- Advanced Product Filtering: Intuitive category-based organization and a smart search system for effortless product discovery.
 
-## React Compiler
+👤 User Account & Integration
+- Secure Authentication: Integrated sign-up and login system.
+- Synced User Profiles: User accounts are fully synchronized with the shopping cart, ensuring a consistent experience across sessions.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🎨 UI/UX & Design
+- Aesthetic Visual Identity: A curated pink-themed design tailored for a modern, feminine audience.
+- Professional Navigation: A sophisticated navbar featuring multi-level nested menus and sub-menus for optimized site architecture.
+- Fully Responsive: Optimized for a flawless experience across desktops, tablets, and smartphones.
 
-## Expanding the ESLint configuration
+🛠️ Tech Stack
+- Frontend: React.js
+- State Management: React Context API (`useContext`) for efficient global data flow.
+- Styling: CSS / Bootstrap (Customized)
+- Routing: React Router DOM
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🚀 Getting Started
+
+1. Clone the repository:
+   git clone https://github.com/TaninDeveloper/pinky-girl-shop.git
+   
+2. Install dependencies:
+   npm install
+   
+3. Run the project:
+   npm start
+   
+
+Developed with ❤️ by TaninDeveloper
