@@ -1,5 +1,7 @@
 🎀 Pinky Girl Cosmetics Store
 
+live site: http://pinkigirl-shop.xo.je/
+
 A high-end, aesthetically designed e-commerce platform specializing in beauty and cosmetics. This project focuses on providing a seamless shopping experience with a sophisticated feminine visual identity and robust state management.
 
 ✨ Key Features
