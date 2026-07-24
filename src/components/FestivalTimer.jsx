@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 function FestivalTimer () {
 
-    const targetdate = new Date ("2026-07-29T23:59:59").getTime ();
+    const targetdate = new Date ("2026-08-29T23:59:59").getTime ();
     const [timeleft, settimeleft] = useState (targetdate-new Date ().getTime ())
 
     useEffect (() => {
@@ -41,7 +41,7 @@ function FestivalTimer () {
                 marginTop: '100px'
             }}>
 
-                <svg style={{position: "relative", bottom: '20px'}} width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="num-svg" style={{position: "relative", bottom: '20px'}} width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="3" y="10" width="18" height="11" rx="2" fill="#ec0e93" />
                 
                 <rect x="2" y="7" width="20" height="4" rx="1" fill="#ff4db8" />
@@ -59,9 +59,9 @@ function FestivalTimer () {
 
                 <h3  className="mb-4"> 💖 جشنواره بزرگ پینکی گرل 💖 </h3>
 
-                <p> تا پایان جشنواره تخفیف های شگفت انگیز</p>
+                <p className="mb-4"> تا پایان جشنواره تخفیف های شگفت انگیز</p>
 
-                <div className="d-flex justify-content-center gap-3">
+                <div className="d-flex justify-content-center gap-2" id="timebox">
 
                     {timerdata.map ((item, index) => (
 

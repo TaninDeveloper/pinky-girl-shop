@@ -1,7 +1,10 @@
-
-
+@font-face {
+  font-family: 'VazirBlack';
+  src: url('fonts/Vazir-Black.woff2') format('woff2');
+  font-display: swap; 
+}
 body{
-  font-family: calibri;
+  font-family: 'VazirBlack';
 }
 
 .img1 {
@@ -150,6 +153,151 @@ background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 
   justify-content: center;
 }
 
-/* .pinki-logo:hover {
-  transform: scale(1.09);
+
+
+
+/* جدید */
+
+.nav-link {
+  white-space: nowrap; 
+  margin-right: 20px;
+}
+
+#navbarNav {
+  margin-right: 35px;
+}
+
+#svg {
+  padding-left: 6%;
+}
+
+/* .img1 {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-right: 130px; 
+  transition: 0.3s;
 } */
+
+.sp {
+  font-size: 24px;
+  /* margin-right: 5px; */
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  justify-items: center;
+  margin-top: 50px; 
+  width: 100%;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+@media (max-width: 992px) and (min-width: 1024) {
+ 
+   .nav-link {
+    font-size: 13px; 
+    padding-right: 200px;
+  }
+   
+}
+
+
+  @media (max-width: 992px) {
+
+  .input-group {
+    width: 100% !important; 
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+}
+
+
+@media (max-width: 480px)   {
+  
+.img1 {
+    margin-right: 0 !important; 
+    margin-left: 10px !important;
+    width: 50px !important; 
+    height: 50px !important;
+  }
+
+  .navbar-toggler {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .container-fluid {
+    display: flex !important;
+    justify-content: space-between !important; 
+    align-items: center !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .sp {
+    font-size: 18px !important;
+  }
+
+  .brand {
+    padding-top: 0 !important; 
+  }
+
+  .navbar-brand {
+    margin-left: 1000 !important;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .dropdown-menu {
+    text-align: center !important;
+    background-color: #222 !important; 
+  }
+
+  .dropdown-item {
+    color: white !important;
+  }
+
+  .mb-4 {
+    font-size: 17px;
+  }
+
+  #card {
+    height: 100px;
+  }
+
+  #but-w-100 {
+    width: 50px;
+    font-size: 14px;
+    height: 60px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr) !important; 
+    gap: 20px 0px !important; 
+    max-width: 280px !important; 
+    margin: 30px auto 0 auto !important; 
+  }
+
+  .category-item:nth-child(3) {
+    grid-column: span 2 !important; 
+    justify-self: center !important; 
+  }
+}
+

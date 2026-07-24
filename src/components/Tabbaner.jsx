@@ -10,7 +10,7 @@ function Tabbaner() {
 
     {
       id: 1,
-      image: '/makeuptab.jpeg', 
+      image: './makeuptab.jpeg', 
       category: 'cosmetic',
       title: 'دنیای رنگارنگ لوازم آرایشی',
       desc: 'جدیدترین برندها برای درخشش تو'
@@ -18,7 +18,7 @@ function Tabbaner() {
 
     {
       id: 2,
-      image: '/skintab.jpeg', 
+      image: './skintab.jpeg', 
       category: 'skin',
       title: 'مراقبت تخصصی پوست',
       desc: 'لطافت و شادابی به سبک پینکی گرل'
@@ -26,7 +26,7 @@ function Tabbaner() {
 
     {
       id: 3,
-      image: '/electrictab.jpeg', 
+      image: './electrictab.jpeg', 
       category: 'electric',
       title: 'لوازم برقی حرفه‌ای',
       desc: 'تکنولوژی در خدمت زیبایی موهای تو'
@@ -63,7 +63,7 @@ function Tabbaner() {
             key={slide.id} 
             className={`carousel-item ${index === 0 ? 'active' : ''}`}
             onClick={() => navigate(`/category/${slide.category}`)}
-            style={{ cursor: 'pointer', height: '450px', marginTop: '80px' }}
+            style={{ cursor: 'pointer', height: 'auto' }}
           >
             <img 
               src={slide.image} 

@@ -7,24 +7,24 @@ function CategoryCircles() {
   const navigate = useNavigate();
 
   const categories = [
-    { id: 1, name: 'لوازم برقی', slug: 'electric', img: '/electric.jpeg' },
-    { id: 2, name: 'آرایشی', slug: 'cosmetic', img: '/makeup.jpeg' },
-    { id: 3, name: 'مراقبت مو', slug: 'hair', img: '/hair.jpeg' },
-    { id: 4, name: 'مراقبت پوست', slug: 'skin', img: '/skin.jpeg' },
-    { id: 5, name: 'عطر و ادکلن', slug: 'perfume', img: '/perfum.jpeg' },
+    { id: 1, name: 'لوازم برقی', slug: 'electric', img: './electric.jpeg' },
+    { id: 2, name: 'آرایشی', slug: 'cosmetic', img: './makeup.jpeg' },
+    { id: 3, name: 'مراقبت مو', slug: 'hair', img: './hair.jpeg' },
+    { id: 4, name: 'مراقبت پوست', slug: 'skin', img: './skin.jpeg' },
+    { id: 5, name: 'عطر و ادکلن', slug: 'perfume', img: './perfum.jpeg' },
   ];
 
   return (
 
     <div className="container my-5">
 
-      <div className="d-flex justify-content-around align-items-center flex-wrap gap-3">
+      <div className="category-grid">
         {categories.map((cat) => (
 
           <div 
             key={cat.id} 
             onClick={() => navigate(`/category/${cat.slug}`)}
-            className="text-center"
+            className="category-item text-center" 
             style={{ cursor: 'pointer', transition: 'all 0.3s ease' }}
           >
 
@@ -37,8 +37,7 @@ function CategoryCircles() {
                 overflow: 'hidden',
                 border: '3px solid #fff',
                 outline: '2px solid #ec0e93', 
-                backgroundColor: '#fff', marginTop: '80px'
-              }}
+                backgroundColor: '#fff'}}
               onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
               onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'} >
            

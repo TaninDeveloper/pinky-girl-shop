@@ -16,7 +16,9 @@ function ProductCard ({product}) {
       <Link to = {`/product/${product.id}`} 
       style={{ textDecoration: 'none', color: 'inherit' }}>
 
-        <div className="p-3 text-center" style={{ height: '200px' }}>
+        <div className="p-3 text-center" 
+        id="car"
+        style={{ height: '150px' }}>
           
           <img src = {product.image} className="img-fluid" 
           style={{ maxHeight: '100%'}} alt= {product.name} />
@@ -33,7 +35,9 @@ function ProductCard ({product}) {
 
           <div className="mb-3">
 
-            <span className="fw-bold fs-5" style={{ color: '#ec0e93'}}>
+            <span className="fw-bold fs-5" style={{ color: '#ec0e93'}}
+            id="price"
+            >
               تومان {product.price}
              </span>
 
@@ -48,16 +52,17 @@ function ProductCard ({product}) {
           onClick={(e) => {e.preventDefault ()
           addToCart (product)}}
           className="w-100 rounded-3 text-white fw-bold py-2" 
+          id="but-w-100"
           style={{ background: 'linear-gradient(90deg,  rgba(252, 105, 193, 1) 0%, white 100%)', border: 'none' }}
           >
             افزودن به سبد
 
           <span style={{marginLeft: '5px'}}>
-             <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+             {/* <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
                <path d="M2 2H4.5L6.5 14H19L21 6H7" stroke="url(#pinkGradient)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                <circle cx="9" cy="19" r="2" fill="#ec0e93" />
                <circle cx="17" cy="19" r="2" fill="#a011cf" />
-             </svg> 
+             </svg>  */}
          </span>  
           
           </button>

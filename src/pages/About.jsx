@@ -66,7 +66,7 @@ function About() {
             </div>
 
             <img 
-              src={aboutImage} 
+              src={"./" + "image_2338102702.png"} 
               alt="دنیای پینکی گرل" 
               className="img-fluid shadow-lg"
               style={{ 

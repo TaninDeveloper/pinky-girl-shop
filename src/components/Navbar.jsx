@@ -25,28 +25,42 @@ function Navbar () {
 
   }
 
+  const closeMenu = () => {
+  const menu = document.getElementById('navbarNav');
+  if (menu) {
+    menu.classList.remove('show'); // حذف دستی کلاس نمایش
+    // اگر دکمه همبرگری هم حالت باز داشت، آن را هم ریست می‌کنیم
+    const toggler = document.querySelector('.navbar-toggler');
+    if (toggler) toggler.classList.remove('collapsed'); 
+  }
+};
+
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" dir="rtl">
       <div className="container-fluid"
        style={{ minHeight: "90px", backgroundColor: "#000", fontFamily: "vazir" }}>
 
-        <Link className="navbar-brand d-flex align-items-center ms-3" to = "/">
-
-          <img className="img1"
-          src="/i1.jpg"
+         <div className="m-brand">
+          <Link className="navbar-brand d-flex align-items-center ms-3"
+         to = "/">
+         <img className="img1"
+          src="./i1.jpg"
           alt="logo"
-          style={{ width: "65px", height: "65px", borderRadius: "50%", marginLeft: "20px", marginRight: '130px' }}
+          style={{ width: "65px", height: "65px", borderRadius: "50%", marginLeft: "20px", marginRight: '40%' }}
           />
 
           <span style={{ fontSize: "24px" }} className="sp">
-            <strong style={{ color: "white" }}> pinki </strong>
-            <strong style={{ color: "rgb(236, 14, 147)" }}> girl </strong>
+            <strong className="brand" style={{ color: "white", paddingTop: "40px" }}> pinki </strong>
+            <strong className="brand" style={{ color: "rgb(236, 14, 147)" }}> girl </strong>
           </span>
 
          </Link>
+          </div>
+        
 
-         <button className="navbar-toggler" type="button" data-bs-toggle = "collapse" data-bs-target="#navbarNav">
+         <button className="navbar-toggler" type="button" data-bs-toggle = "collapse" data-bs-target="#navbarNav"
+         style={{marginLeft: "10%"}}>
 
           <span className="navbar-toggler-icon"> </span>
 
@@ -57,7 +71,9 @@ function Navbar () {
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
 
             <li className="nav-item">
-              <Link className="nav-link text-white" to = "/"> خانه </Link>
+              <Link className="nav-link text-white"
+              onClick={closeMenu} 
+              to = "/"> خانه </Link>
             </li>
 
             <li className="nav-item dropdown">
@@ -67,40 +83,55 @@ function Navbar () {
 
               <ul className="dropdown-menu text-end">
                 <li>
-                  <Link className="dropdown-item" to = "/category/all"> همه محصولات </Link>
+                  <Link className="dropdown-item" onClick={closeMenu}
+                  to = "/category/all"> همه محصولات </Link>
                   
                 </li>
                 <li> <hr className="dropdown-divider" /> </li>
 
                 <li>
-                  <Link className="dropdown-item" to = "/category/cosmetic"> آرایشی </Link>
+                  <Link className="dropdown-item"
+                  onClick={closeMenu}
+                   to = "/category/cosmetic"> آرایشی </Link>
                 </li>
 
                 <li>
-                  <Link className="dropdown-item" to = "/category/perfume"> عطر و ادکلن </Link>
+                  <Link className="dropdown-item"
+                  onClick={closeMenu}
+                   to = "/category/perfume"> عطر و ادکلن </Link>
                 </li>
 
                 <li>
-                  <Link className="dropdown-item" to = "/category/skin"> مراقبت از پوست </Link>
+                  <Link className="dropdown-item"
+                  onClick={closeMenu}
+                   to = "/category/skin"> مراقبت از پوست </Link>
                 </li>
 
                 <li>
-                  <Link className="dropdown-item" to = "/category/hair"> مراقبت از مو </Link>
+                  <Link className="dropdown-item"
+                  onClick={closeMenu}
+                   to = "/category/hair"> مراقبت از مو </Link>
                 </li>
 
                 <li>
-                  <Link className="dropdown-item" to = "/category/electric"> لوازم برقی </Link>
+                  <Link className="dropdown-item"
+                  onClick={closeMenu}
+                  to = "/category/electric"> لوازم برقی </Link>
                 </li>
               </ul>
 
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link text-white" to = "/About"> درباره ما </Link>
+              <Link className="nav-link text-white"
+              onClick={closeMenu}
+              to = "/About"> درباره ما </Link>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link text-white" to = "/Contact"> ارتباط با ما </Link>
+              <Link className="nav-link text-white" 
+              onClick={closeMenu}
+              to = "/Contact"> ارتباط با ما </Link>
             </li>
 
           </ul>
@@ -111,10 +142,10 @@ function Navbar () {
             <input 
             className="form-control border-0"
             type="search"
-            placeholder=" جستجوی محصولات... "
+            placeholder=" جستجو محصول... "
             value={searchterm}
             onChange={handelsearch}
-            style={{ borderRadius: "0 20px 20px 0", fontSize: "14px", backgroundColor: "#f5f5f5" }}
+            style={{ borderRadius: "0 20px 20px 0", fontSize: "12px", backgroundColor: "#f5f5f5", marginRight: "25px"}}
             />
 
             <span className="input-group-text border-0" style={{ borderRadius: "20px 0 0 20px", backgroundColor: "rgb(236, 14, 147)" }}>
@@ -125,7 +156,9 @@ function Navbar () {
 
           </div>
 
-          <Link className="text-white position-relative ms-3" to = "/Basket">
+          <Link className="text-white position-relative ms-3" 
+          onClick={closeMenu}
+          to = "/Basket">
 
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
               <path d="M2 2H4.5L6.5 14H19L21 6H7" stroke="url(#pinkGradient)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -143,8 +176,11 @@ function Navbar () {
             )}
           </Link>
 
-          <Link className="text-white ms-4" to = "/profile" >
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" style={{marginLeft: '110px'}}>
+          <Link className="text-white ms-4" 
+          id="svg"
+          onClick={closeMenu}
+          to = "/profile" >
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" >
              <circle cx="12" cy="7" r="4" stroke="url(#userGradient)" strokeWidth="2" />
              <path d="M5 20C5 16.134 8.13401 13 12 13C15.866 13 19 16.134 19 20H5Z" stroke="url(#userGradient)" strokeWidth="2" strokeLinejoin="round" />
             </svg>
