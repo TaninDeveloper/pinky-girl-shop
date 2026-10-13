@@ -1,6 +1,6 @@
 🎀 Pinky Girl Cosmetics Store
 
-live site: pinkigirl.soleimaniantanin.workers.dev
+live site: https://pinkigirl.soleimaniantanin.workers.dev/
 
 A high-end, aesthetically designed e-commerce platform specializing in beauty and cosmetics. This project focuses on providing a seamless shopping experience with a sophisticated feminine visual identity and robust state management.
 
